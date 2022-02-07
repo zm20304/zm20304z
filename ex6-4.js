@@ -1,0 +1,1 @@
+function nazo() {if (document.getElementById('answer').value == '1') {alert('正解！');}}
