@@ -2,9 +2,10 @@
 <html lang="ja">
 <head>
   <link rel="stylesheet" href="mystile.css"><!--この行を追加-->
+  <link rel="stylesheet" href="imagechange.css"> <!--この行を追加-->
+  <!---->
   <meta charset="UTF-8">
   <title> 期末課題</title>
-  <script src="ex6-1.js"></script>
   <script src="ex6-2.js"></script>
   <script src="ex6-3.js"></script>
   <script src="ex6-4.js"></script>
@@ -13,18 +14,15 @@
   <img src="./image/ju旗_small.jpg.png" alt="城西大学ホームページ"></a><br>
 <body>
   <h1>問題</h1><p>  城西大学の画像はどっち？</p>
-    <input type="button" value="画像の変更" onclick="imgchange1();">
+    <input type="button" value="画像の変更" onclick="imgchange1();"> 
     <input type="button" value="戻す" onclick="imgchange2();">
     <img src='./image/ju旗_small.jpg.png' id="logo" alt="Josai Logo" class="imagechange">
-    <a href="https://www.josai.ac.jp/">
-      <img src="./image/ju旗_small.jpg.png" alt="城西大学ホームページ"></a><br>
     <p>答（最初の画像の場合１次の画像の場合は２を押してください。）：<input type="text" id="answer">
       <input type="button" value="解答" onclick="nazo();"></p>
-      <h1>答えが分かったら画像を押してサイトを見に行こう。</h1>
+      <h1>答えが分かったら下の画像を押してサイトを見に行こう！</h1>
       <a href="https://www.josai.ac.jp/">
-        <img src="./image/ju旗_small.jpg.png" alt="城西大学ホームページ"></a><br>
+        <img src='./image/ju旗_small.jpg.png' id="logo" alt="Josai Logo" class="imagechange"></a>
     <h1>終わりに</h1>
-    <input type="button" value="最後に" onclick="goodbye62();">
     <form name="timer"> <input type="button" value="スタート" onclick="startfnc()">
       <br> <input type="text" name="moji" size="30" value=""> </form>
      <form> <input type="button" value="Timer" onclick="setTimeout('mes()',3000)"> </form>
